@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
 *, *::after, *::before {
     box-sizing: border-box;
@@ -13,9 +14,12 @@ body {
 }
 
 .container {
-    margin: 0 auto;
-    padding: 30px 10%;
-}
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
 
 /* Splash section */
@@ -30,7 +34,7 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     min-height: 8vh;
 }
@@ -44,11 +48,16 @@ nav .logo {
 
 .nav-links {
     display: flex;
-    justify-content: space-around;
-    flex: 0 0 45%;
+    justify-content: flex-end;
+    padding: 0;
+    flex: 0 0 55%;
 }
+
+
 .nav-links li {
     list-style: none;
+    margin-left: 60px;
+    
 }
 .nav-links a {
     color: white;
@@ -96,3 +105,59 @@ nav .logo {
     font-weight: bold;
 }
 
+/* Service */
+
+.service-title {
+    padding: 100px 0 80px;
+    text-align: center;
+}
+
+.service-title h2 {
+    font-size: 48px;
+    margin: 0;
+    padding-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+.service-title p {
+    margin: 0;
+    color: grey;
+    font-size: 24px;
+}
+
+.service .row {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.service .row h2,
+.service .row p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.service .service-icon-background {
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid gold;
+    margin: 0 auto;
+}
+
+.service .service-icon-background i {
+    font-size: 36px;
+    color: gold;
+    padding-top: 20px;
+}
+
+.service .row p {
+    padding: 0 20px;
+}
+
+.service .row h4 {
+    font-size: 24px;
+    font-style: bold;
+    margin: 0;
+    padding-top: 10px;
+}
