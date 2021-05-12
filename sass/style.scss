@@ -236,8 +236,7 @@ nav .logo {
 footer {
     height: 10vh;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    position: relative;
 }
 
  footer ul {
@@ -246,7 +245,10 @@ footer {
      list-style-type: none;
      text-align: center;
      display: inline-block;
-     
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,-50%);
  }
 
  footer ul li {
@@ -265,11 +267,16 @@ footer ul li a i {
     padding-top: 8px;
 }
 
+footer .container .copyright {
+    padding-top: 30px;
+    text-align: left;
+}
+
+/*Media queries */
+
 @media (max-width: 768px) {
 
-    body {
-        overflow-x: hidden;
-    }
+    
     .service .container .row,
     .portfolio .container .row
     {
@@ -277,8 +284,28 @@ footer ul li a i {
         align-items: center;
     }
     
-    .nav {
-        flex-wrap: wrap;
+    nav {
+        display: block;
+    }
+
+    nav .logo {
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    nav .logo p {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    nav .nav-links {
+        display: block;
+    }
+
+    nav .nav-links li {
+        margin: 0;
+        text-align: center;
+        padding-top: 40px;
     }
 
     .card {
@@ -290,14 +317,27 @@ footer ul li a i {
     }
     .splash-title h3 {
         font-size: 48px;
+        padding-top: 40px;
+    }
+    footer ul {
+        margin: 0 auto;
+        padding: 25px;
+        list-style-type: none;
+        text-align: center;
+        display: block;
+        position: relative;
+        left:unset;
+        top:unset;
+        transform:unset
+    }
+
+    footer .container .copyright {
+        text-align: center;
+        padding-top: 30px;
     }
 }
 
-@media (max-width: 990px){
-
-    body {
-        overflow-x: hidden;
-    }
+@media (min-width: 769px) and (max-width: 991px){
 
     .service .container .row,
     .portfolio .container .row
@@ -305,8 +345,30 @@ footer ul li a i {
         flex-direction: column;
         align-items: center;
     }
-    .nav {
-        justify-content: center;
+
+    nav {
+        display: block;
+    }
+
+    nav .logo {
+        padding: 30px;
+        text-align: center;
+    }
+
+    nav .logo p {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    nav .nav-links {
+        display: block;
+    }
+
+    nav .nav-links li {
+        margin: 0;
+        text-align: center;
+        padding-top: 30px;
+        font-size: 24px;
     }
     
     .card {
@@ -323,6 +385,23 @@ footer ul li a i {
     }
     .splash-title h3 {
         font-size: 48px;
+        padding-top: 40px;
+    }
+    footer ul {
+        margin: 0 auto;
+        padding: 25px;
+        list-style-type: none;
+        text-align: center;
+        display: block;
+        position: relative;
+        left:unset;
+        top:unset;
+        transform:unset
+    }
+
+    footer .container .copyright {
+        text-align: center;
+        padding-top: 30px;
     }
 }
 
